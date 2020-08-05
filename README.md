@@ -4,9 +4,6 @@ TASK: Identify High Latitude Dust in a given MODIS imagery
 
 **DATA FETCHING**
 
-The XML file is downloaded from AWS URL https://hld-datashare.s3.amazonaws.com/. Then, by parsing the XML file, I downloaded the shapefiles and saved them in the Shapefiles folder. Using shapefiles, I obtain the geometry portion defined by the bounding coordinates(lower_latitude, left_longitude, higher_latitude, right_longitude). The images are obtained from the request to the URL using modis_url. The images are then masked manually using GIMP software.
-
-
 **DATA PREPROCESSING**
 
 The dataset is small, so the following techniques can be used to preprocess the data before it is fed into the model. Image normalization is a typical process in image processing that changes the range of pixel intensity values between 0 and 255. The data is normalized by dividing the data by 255, which helps to bound the pixel intensity between 0 and 255. The other techniques involve image resizing, random cropping, horizontal and vertical flipping. The dataset is then split into training(80%) and validation set(20%). The data loader is then defined with training and validation set, and are then fed as input to the model.
