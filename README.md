@@ -1,4 +1,4 @@
-# Identifying High-Latitude-Dust-MODIS-Imagery
+# Identifying High-Latitude-Dust
 
 TASK: Identify High Latitude Dust in a given MODIS imagery
 
